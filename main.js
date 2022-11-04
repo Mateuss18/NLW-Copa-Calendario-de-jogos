@@ -14,7 +14,7 @@ function createGame(player1, hour, player2) {
     `
 }
 
-function createCard(date, day, games){
+function createCard(date, day, games) {
     return `
         <div class="card">
             <h2>${date} <span>${day}</span></h2>
@@ -26,20 +26,13 @@ function createCard(date, day, games){
     `
 }
 
-document.querySelector("#app").innerHTML = `
-    <header>
-        <img src="./assets/logo.svg" alt="Logo NLW copa" />
-    </header>
-    <main id="cards">
-        ${createCard("24/11", "quinta",
-            createGame('brazil', '16:00', 'serbia')
-        )}
-        ${createCard("28/11", "segunda",
-            createGame('switzerland', '13:00', 'brazil') +
-            createGame('portugal', '16:00', 'cameroon')
-        )}    
-        ${createCard("02/12", "sexta",
-            createGame('brazil', '16:00', 'serbia')
-        )}    
-    </main>
-`
+document.querySelector('#cards').innerHTML =
+    createCard('24/11', 'quinta', createGame('brazil', '16:00', 'serbia')) 
+    +
+    createCard('28/11', 'segunda',
+        createGame('switzerland', '13:00', 'brazil') 
+        +
+        createGame('portugal', '16:00', 'cameroon')
+    ) 
+    +
+    createCard('02/12', 'sexta', createGame('brazil', '16:00', 'serbia'))
