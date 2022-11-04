@@ -38,6 +38,8 @@ body {
     background-color: #1d1c19;
     border-bottom: 2px solid #f7dd43;
     border-radius: 6px;
+    animation-delay: 300ms;
+    opacity: 0;
 }
 
 #app .card h2 {
@@ -92,4 +94,42 @@ body {
     font-weight: 900;
     font-size: 36px;
     line-height: 125%;
+}
+
+#app .card h2:hover,
+#app .card ul li img:hover,
+#app .card ul li strong:hover{
+    transform: scale(1.1);
+}
+
+#app .card h2,
+#app .card ul li img,
+#app .card ul li strong{
+    transition: transform 0.2s;
+}
+
+.card:nth-child(odd){
+    animation: appearLeft .4s forwards;
+}
+
+.card:nth-child(even){
+    animation: appearRight .6s forwards;
+}
+
+@keyframes appearLeft{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes appearRight{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+    }
 }
