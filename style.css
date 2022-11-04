@@ -22,6 +22,7 @@ body {
 }
 
 #app header {
+    text-align: center;
     margin-bottom: 63px;
 }
 
@@ -109,7 +110,7 @@ body {
 }
 
 .card:nth-child(odd){
-    animation: appearLeft .4s forwards;
+    animation: appearLeft .6s forwards;
 }
 
 .card:nth-child(even){
@@ -131,5 +132,13 @@ body {
     }
     100%{
         opacity: 1;
+    }
+}
+
+@media(min-width: 700px){
+    #app #cards{
+        max-width: 670px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
