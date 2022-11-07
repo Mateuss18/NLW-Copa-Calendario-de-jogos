@@ -10,8 +10,7 @@ ul {
 }
 
 body {
-    background-color: #121214;
-    background-image: url(./assets/bg.svg);
+    background: #121214 url(./assets/bg.svg);
     background-position-x: center;
     background-position-y: 55.6%;
 }
@@ -58,15 +57,13 @@ body {
     margin-bottom: 53px;
 
     color: #f7dd43;
-    font-weight: 700;
-    font-size: 24px;
+    font: 700 24px "Roboto", sans-serif;
     line-height: 125%;
 }
 
 #app .card h2 span {
     color: #e1e1e6;
-    font-weight: 700;
-    font-size: 14px;
+    font: 700 14px "Roboto", sans-serif;
     text-transform: uppercase;
     line-height: 125%;
 }
@@ -92,8 +89,7 @@ body {
 
 #app .card li strong {
     color: #e1e1e6;
-    font-weight: 900;
-    font-size: 36px;
+    font: 900 36px "Roboto", sans-serif;
     line-height: 125%;
 }
 
