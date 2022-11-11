@@ -40,6 +40,8 @@ body {
     border-radius: 6px;
     animation-delay: 300ms;
     opacity: 0;
+
+    margin-bottom: 10px;
 }
 
 #app .card h2 {
@@ -142,4 +144,8 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
     }
+}
+
+.slick-track {
+    gap: 20px;
 }
